@@ -1,0 +1,8 @@
+# robots.txt for PixelFair
+User-agent: *
+Allow: /
+
+# Host your deployment and replace the placeholder domain in canonical/OG URLs
+# (currently https://pixelfair.example) with the real production domain.
+
+Sitemap: https://pixelfair.example/sitemap.xml

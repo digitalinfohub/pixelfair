@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PixelFair XML sitemap. Replace https://pixelfair.example with the real production domain when deployed. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://pixelfair.example/index.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://pixelfair.example/games.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=neon-drift-legacy</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=starbound-tactics</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=pixel-harvest-moon</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=shadow-requiem</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=cogwork-alchemy</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=aether-bound</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=crypt-of-zzulk</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=moss-jumper</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=hyperloop-duel</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=tide-cartographer</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=ember-siege</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=lunar-cafe-shift</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=glitch-berserk</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pixelfair.example/game.html?slug=hollow-crown-deck</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pixelfair.example/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pixelfair.example/blog-article.html?slug=dev-log-template</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pixelfair.example/blog-article.html?slug=pixel-art-basics</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pixelfair.example/blog-article.html?slug=community-spotlight-forms</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pixelfair.example/blog-article.html?slug=indie-news-roundup</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pixelfair.example/blog-article.html?slug=marketing-resources</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pixelfair.example/blog-article.html?slug=pixelfair-update-roadmap</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://pixelfair.example/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://pixelfair.example/submit-game.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pixelfair.example/contact.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://pixelfair.example/faq.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://pixelfair.example/community-guidelines.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pixelfair.example/developer-guidelines.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pixelfair.example/accessibility-statement.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pixelfair.example/copyright-policy.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pixelfair.example/privacy-policy.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pixelfair.example/cookie-policy.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pixelfair.example/cookie-settings.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pixelfair.example/terms-and-conditions.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pixelfair.example/advertising-policy.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://pixelfair.example/disclaimer.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+</urlset>
