@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Detail — Coming Soon | PixelFair Indie Game Discovery</title>
+<meta name="description" content="PixelFair individual game detail page template. All example listings display Coming Soon for release dates, platforms and playable builds.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PixelFair Game Detail — Coming Soon">
+<meta property="og:description" content="Example indie game listing on PixelFair. Details marked Coming Soon until launch.">
+<meta property="og:url" content="https://pixelfair.example/game.html">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://pixelfair.example/game.html">
+<style id="pixelfair-shared-css">
+:root{--navy-900:#070b1e;--navy-800:#0b1026;--navy-700:#111735;--navy-600:#1a2147;--blue:#2f6bff;--blue-bright:#4d8dff;--cyan:#22d3ee;--purple:#a855f7;--pink:#f472b6;--text:#eaf0ff;--muted:#a6b3d9;--card-border:rgba(122,156,255,.22);--focus:#ffd166;--grad:linear-gradient(135deg,var(--blue) 0%,var(--cyan) 50%,var(--purple) 100%)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Poppins','Nunito','Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:radial-gradient(1200px 600px at 80% -10%,rgba(47,107,255,.25),transparent 60%),radial-gradient(900px 500px at -10% 30%,rgba(168,85,247,.18),transparent 55%),var(--navy-900);color:var(--text);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{line-height:1.25;margin:0 0 .5em;font-weight:700;letter-spacing:.2px}
+h1{font-size:clamp(1.9rem,4.5vw,3rem)}
+h2{font-size:clamp(1.4rem,3vw,2rem)}
+h3{font-size:clamp(1.1rem,2.2vw,1.4rem)}
+p{margin:0 0 1em}
+main{display:block}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--navy-700);color:#fff;padding:.7rem 1.2rem;z-index:200;border-radius:0 0 10px 0;font-weight:600}
+.skip-link:focus{left:0}
+.container{width:min(1180px,92%);margin-inline:auto}
+.section{padding:3.4rem 0}
+.section-alt{background:linear-gradient(180deg,rgba(26,33,71,.55),rgba(11,16,38,.2))}
+.section-title{font-size:clamp(1.5rem,3.2vw,2.1rem);margin-bottom:.4rem}
+.section-sub{color:var(--muted);max-width:70ch;margin-bottom:1.8rem}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge-soon{display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#1a0d00;font-weight:800;font-size:.72rem;letter-spacing:1.2px;padding:.28rem .7rem;border-radius:999px;text-transform:uppercase}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(7,11,30,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(122,156,255,.18)}
+.nav-bar{display:flex;align-items:center;gap:1rem;padding:.7rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.25rem;color:var(--text)}
+.brand:hover{text-decoration:none}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:var(--grad);display:grid;place-items:center;font-size:1.15rem;color:#04122b;font-weight:900;box-shadow:0 0 18px rgba(34,211,238,.45)}
+.brand-name{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;list-style:none;margin:0 0 0 auto;padding:0;gap:.2rem;align-items:center}
+.nav-links a{display:block;padding:.55rem .85rem;border-radius:10px;color:var(--text);font-weight:600;font-size:.95rem;transition:background .2s,color .2s}
+.nav-links a:hover{background:rgba(77,141,255,.16);text-decoration:none;color:#fff}
+.nav-links a[aria-current="page"]{background:rgba(34,211,238,.16);color:var(--cyan)}
+.nav-cta a{background:var(--grad);color:#04122b !important;font-weight:800;box-shadow:0 0 16px rgba(77,141,255,.5)}
+.nav-toggle{display:none;margin-left:auto;background:var(--navy-700);border:1px solid var(--card-border);color:var(--text);font-size:1.35rem;line-height:1;padding:.45rem .7rem;border-radius:10px;cursor:pointer}
+@media (max-width:920px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--navy-800);border-bottom:1px solid var(--card-border);padding:.8rem 4%;gap:.3rem}.nav-links.open{display:flex}.nav-links li{width:100%}.nav-links a{width:100%}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font:inherit;font-weight:700;padding:.78rem 1.5rem;border-radius:999px;border:none;cursor:pointer;transition:transform .18s,box-shadow .18s,filter .18s;text-align:center}
+.btn-primary{background:var(--grad);color:#04122b;box-shadow:0 0 22px rgba(77,141,255,.55)}
+.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.1);text-decoration:none}
+.btn-secondary{background:transparent;color:var(--cyan);border:2px solid rgba(34,211,238,.6)}
+.btn-secondary:hover{background:rgba(34,211,238,.12);text-decoration:none;transform:translateY(-2px)}
+.btn[disabled],.btn-disabled{opacity:.6;cursor:not-allowed;pointer-events:none;filter:grayscale(.35)}
+.grid{display:grid;gap:1.4rem}
+.grid-3{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.game-card{background:linear-gradient(165deg,var(--navy-700),var(--navy-800));border:1px solid var(--card-border);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s,border-color .22s}
+.game-card:hover{transform:translateY(-6px);border-color:rgba(34,211,238,.55);box-shadow:0 12px 34px rgba(0,0,0,.45),0 0 22px rgba(77,141,255,.25)}
+.card-art{aspect-ratio:16/9;display:grid;place-items:center;position:relative;color:#04122b}
+.card-art .art-emoji{font-size:3rem}
+.card-body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.card-title{font-size:1.08rem;margin:0;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.card-desc{color:var(--muted);font-size:.92rem;margin:0;flex:1}
+.tag{background:rgba(168,85,247,.16);border:1px solid rgba(168,85,247,.4);color:#e2ccff;padding:.14rem .6rem;border-radius:999px;font-size:.75rem;font-weight:600}
+.developer-line{font-size:.82rem;color:var(--muted)}
+.breadcrumbs{font-size:.88rem;color:var(--muted);margin:1.4rem 0 .6rem}
+.breadcrumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0}
+.breadcrumbs li+li::before{content:"›";margin-right:.4rem;color:#7f8fc0}
+.breadcrumbs a{color:#9ecbff}
+.two-col{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem}
+@media (max-width:860px){.two-col{grid-template-columns:1fr}}
+.share-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
+.screenshot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.shot{aspect-ratio:16/9;border-radius:14px;display:grid;place-items:center;border:1px solid var(--card-border);color:#04122b;font-weight:800;position:relative;overflow:hidden}
+.shot .shot-label{position:absolute;bottom:.5rem;right:.6rem;background:rgba(7,11,30,.75);color:#dfe9ff;font-size:.72rem;padding:.2rem .6rem;border-radius:999px;font-weight:600}
+.feature-list{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+.feature-list li{background:rgba(47,107,255,.1);border:1px solid var(--card-border);border-radius:12px;padding:.6rem .9rem;display:flex;gap:.6rem;align-items:center}
+.spec-table{width:100%;border-collapse:collapse}
+.spec-table th,.spec-table td{border:1px solid var(--card-border);padding:.6rem .8rem;text-align:left}
+.spec-table th{background:rgba(47,107,255,.18);width:38%}
+.cta-banner{background:linear-gradient(135deg,rgba(47,107,255,.35),rgba(168,85,247,.3));border:1px solid rgba(34,211,238,.4);border-radius:22px;padding:2.2rem 1.6rem;text-align:center}
+.card-link{color:inherit}
+.card-link:hover{text-decoration:none}
+.coming-soon-banner{background:linear-gradient(135deg,#f59e0b,#ef4444);color:#1a0d00;font-weight:900;letter-spacing:3px;text-align:center;padding:.8rem 1rem;border-radius:14px;font-size:1.15rem;margin:1rem 0}
+.site-footer{margin-top:4rem;background:#05081a;border-top:1px solid rgba(122,156,255,.2);padding:3rem 0 1.6rem;font-size:.92rem}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:2rem}
+.footer-col h3{font-size:.95rem;text-transform:uppercase;letter-spacing:1.4px;color:#cfe4ff;margin-bottom:.8rem}
+.footer-col ul{list-style:none;margin:0;padding:0}
+.footer-col li{margin-bottom:.45rem}
+.footer-col a{color:var(--muted)}
+.footer-col a:hover{color:var(--cyan)}
+.footer-bottom{margin-top:2.2rem;padding-top:1.2rem;border-top:1px solid rgba(122,156,255,.15);color:#8fa0cf;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between}
+.contact-mail{font-weight:700;color:var(--cyan) !important}
+.visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.ad-slot{border:1px dashed rgba(166,179,217,.45);border-radius:12px;min-height:90px;display:grid;place-items:center;color:#7f8fc0;font-size:.78rem;letter-spacing:1px;text-transform:uppercase;margin:2rem auto;max-width:728px;background:rgba(26,33,71,.3)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}.game-card:hover,.btn:hover{transform:none}}
+</style>
+<script src="games-data.js" defer></script>
+<script defer>
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof PIXELFAIR_GAMES === 'undefined') return;
+  var params = new URLSearchParams(location.search);
+  var slug = (params.get('slug') || '').toLowerCase();
+  var game = PIXELFAIR_GAMES.filter(function (g) { return g.slug === slug; })[0];
+
+  var root = document.getElementById('game-root');
+  var notfound = document.getElementById('game-notfound');
+  if (!game) {
+    /* Unknown or missing slug: graceful fallback rather than broken page */
+    game = PIXELFAIR_GAMES[0];
+    document.title = "Game Listing — Coming Soon | PixelFair";
+  }
+  notfound.hidden = true;
+  root.hidden = false;
+
+  function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+
+  document.getElementById('g-title').textContent = game.title;
+  document.getElementById('g-art').style.background = game.art;
+  document.getElementById('g-art').setAttribute('aria-label', 'Stylised placeholder key art for ' + game.title + ' — official artwork Coming Soon');
+  document.getElementById('g-emoji').textContent = game.emoji;
+  document.getElementById('g-desc').textContent = game.desc;
+  document.getElementById('g-dev').textContent = game.dev + ' — full developer profile Coming Soon';
+  document.getElementById('g-genres').innerHTML = game.genres.map(function(x){return '<span class="tag">'+esc(x)+'</span>';}).join(' ');
+  document.getElementById('g-release').textContent = 'Coming Soon';
+  document.getElementById('g-platforms').textContent = 'Coming Soon';
+  document.getElementById('g-price').textContent = 'Coming Soon';
+  document.getElementById('g-status').textContent = 'Coming Soon';
+  document.getElementById('g-website').textContent = 'Coming Soon';
+  document.getElementById('g-devsite').textContent = 'Coming Soon';
+  document.getElementById('crumb-current').textContent = game.title;
+
+  /* Screenshots gallery (placeholders) */
+  var sg = document.getElementById('shots');
+  var shots = ['Screenshot 1','Screenshot 2','Screenshot 3','Screenshot 4'];
+  sg.innerHTML = shots.map(function(label,i){
+    return '<div class="shot" style="background:'+game.art+'" role="img" aria-label="'+esc(label)+' placeholder for '+esc(game.title)+' — actual screenshots Coming Soon"><span aria-hidden="true">'+game.emoji+'</span><span class="shot-label">'+label+' — Coming Soon</span></div>';
+  }).join('');
+
+  /* Related games: share a genre */
+  var related = PIXELFAIR_GAMES.filter(function(g){
+    return g.slug!==game.slug && g.genres.some(function(x){return game.genres.indexOf(x)!==-1;});
+  }).slice(0,3);
+  var pool = PIXELFAIR_GAMES.filter(function(g){return g.slug!==game.slug;});
+  while (related.length<3 && pool.length) related.push(pool.splice(Math.floor(pool.length/2),1)[0]);
+  document.getElementById('related-grid').innerHTML = related.map(function(g){
+    return '<article class="game-card"><div class="card-art" style="background:'+g.art+'" role="img" aria-label="Placeholder artwork for '+esc(g.title)+'"><span class="art-emoji" aria-hidden="true">'+g.emoji+'</span></div><div class="card-body"><h3 class="card-title"><a class="card-link" href="game.html?slug='+encodeURIComponent(g.slug)+'">'+esc(g.title)+'</a> <span class="badge-soon">Coming Soon</span></h3><p class="card-desc">'+esc(g.desc)+'</p><div class="developer-line">by '+esc(g.dev)+'</div></div></article>';
+  }).join('');
+
+  /* Share / copy link */
+  var shareUrl = location.href;
+  document.getElementById('share-copy').addEventListener('click', function () {
+    var status = document.getElementById('share-status');
+    function done(){ status.textContent='Page link copied to your clipboard.'; setTimeout(function(){status.textContent='';},3000); }
+    function fail(){ status.textContent='Could not copy automatically — the page link is shown below; select and copy it manually.'; var t=document.getElementById('share-fallback'); t.value=shareUrl; t.hidden=false; }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(shareUrl).then(done, fail);
+    } else { fail(); }
+  });
+  document.getElementById('share-mail').href = 'mailto:?subject=' + encodeURIComponent('Check out "'+game.title+'" on PixelFair (Coming Soon)') + '&body=' + encodeURIComponent('I found this upcoming indie game listing on PixelFair: ' + shareUrl + '\n\nStatus: Coming Soon.');
+  document.getElementById('share-tw').href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent('On PixelFair (Coming Soon): "'+game.title+'" by '+game.dev) + ' ' + shareUrl;
+  document.getElementById('share-fb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(shareUrl);
+});
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html" aria-label="PixelFair home"><span class="logo" aria-hidden="true">▲</span><span class="brand-name">PixelFair</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">☰</button>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-cta"><a href="submit-game.html">Submit a Game</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li aria-current="page" id="crumb-current">Game Detail</li>
+    </ol>
+  </nav>
+
+  <div class="empty-state" id="game-notfound">
+    <span class="big" aria-hidden="true">🎮</span>
+    <p><strong>This game listing could not be found.</strong></p>
+    <p>Browse the <a href="games.html">games directory</a> instead.</p>
+  </div>
+
+  <div id="game-root" hidden>
+    <div class="coming-soon-banner" role="status">COMING SOON</div>
+
+    <div class="two-col" style="margin-top:1.4rem">
+      <div>
+        <h1 id="g-title">Game Title</h1>
+        <div class="card-art" id="g-art" role="img" aria-label="Game key art placeholder" style="border-radius:18px;border:1px solid var(--card-border);aspect-ratio:16/9"><span class="art-emoji" id="g-emoji" aria-hidden="true">🎮</span></div>
+
+        <h2 style="margin-top:2rem">Description</h2>
+        <p id="g-desc"></p>
+        <p style="color:var(--muted);font-size:.9rem"><span class="status-dot" aria-hidden="true"></span>Full press kit, trailer and media assets: <strong>Coming Soon</strong>.</p>
+
+        <h2 style="margin-top:2rem">Genre Tags</h2>
+        <p id="g-genres"></p>
+
+        <h2 style="margin-top:2rem">Screenshots <span class="badge-soon">Gallery Coming Soon</span></h2>
+        <div class="screenshot-grid" id="shots"></div>
+
+        <h2 style="margin-top:2rem">Game Features</h2>
+        <ul class="feature-list">
+          <li>✨ Feature details — <strong>Coming Soon</strong></li>
+          <li>🧩 Feature details — <strong>Coming Soon</strong></li>
+          <li>🌐 Feature details — <strong>Coming Soon</strong></li>
+          <li>🏆 Feature details — <strong>Coming Soon</strong></li>
+        </ul>
+
+        <h2 style="margin-top:2rem">Share This Listing</h2>
+        <div class="share-row">
+          <button type="button" class="btn btn-secondary" id="share-copy">📋 Copy Link</button>
+          <a class="btn btn-secondary" id="share-mail" href="mailto:">✉️ Email</a>
+          <a class="btn btn-secondary" id="share-tw" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer external">𝕏 Post</a>
+          <a class="btn btn-secondary" id="share-fb" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer external">Facebook</a>
+        </div>
+        <p class="results-info" id="share-status" role="status" aria-live="polite"></p>
+        <label class="visually-hidden" for="share-fallback">Page link</label>
+        <input class="search-input" id="share-fallback" type="text" readonly hidden style="margin-top:.6rem">
+      </div>
+
+      <aside aria-label="Game information panel">
+        <div class="form-card" style="max-width:none;padding:1.5rem">
+          <h2 style="margin-top:0">Play Status</h2>
+          <p><button type="button" class="btn btn-primary" disabled aria-disabled="true" style="width:100%">🔒 COMING SOON — Not Playable Yet</button></p>
+          <p style="font-size:.85rem;color:var(--muted)">The “PLAY NOW” option is unavailable: no playable build exists yet. We will never invent download or store links. When the developer provides one after launch, it will appear here.</p>
+
+          <h2>Details</h2>
+          <table class="spec-table">
+            <caption class="visually-hidden">Game details table</caption>
+            <tr><th scope="row">Release date</th><td id="g-release">Coming Soon</td></tr>
+            <tr><th scope="row">Platforms</th><td id="g-platforms">Coming Soon</td></tr>
+            <tr><th scope="row">Price</th><td id="g-price">Coming Soon</td></tr>
+            <tr><th scope="row">Listing status</th><td id="g-status">Coming Soon</td></tr>
+            <tr><th scope="row">Game website</th><td id="g-website">Coming Soon</td></tr>
+            <tr><th scope="row">Developer site</th><td id="g-devsite">Coming Soon</td></tr>
+          </table>
+
+          <h2>Developer</h2>
+          <p class="developer-line" id="g-dev"></p>
+
+          <div class="cta-banner" style="padding:1.4rem 1.1rem;margin-top:1.4rem">
+            <h3 style="margin-top:0">Own this game?</h3>
+            <p style="font-size:.9rem">Request updates or early visibility: <a href="mailto:services@digitalinfohub.net?subject=PixelFair%20Listing%20Update%20Request">services@digitalinfohub.net</a></p>
+            <a class="btn btn-primary" href="submit-game.html" style="width:100%">Submit a Game</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="section" aria-labelledby="related-title">
+      <h2 id="related-title" class="section-title">Related Games <span class="badge-soon">Coming Soon</span></h2>
+      <div class="grid grid-3" id="related-grid"></div>
+    </section>
+
+    <div class="ad-slot" role="complementary" aria-label="Reserved advertising space">Advertising space reserved — clearly separated from editorial content</div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h3>PixelFair</h3><p style="color:var(--muted)">Every Indie Game Deserves to Be Seen. A discovery platform for independent games &mdash; listings and features marked <strong>Coming Soon</strong>.</p><p>Email: <a class="contact-mail" href="mailto:services@digitalinfohub.net">services@digitalinfohub.net</a></p></div>
+      <div class="footer-col"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="games.html">Games Directory</a></li><li><a href="blog.html">Blog</a></li><li><a href="about.html">About</a></li><li><a href="submit-game.html">Submit a Game</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h3>Information</h3><ul><li><a href="faq.html">FAQ</a></li><li><a href="community-guidelines.html">Community Guidelines</a></li><li><a href="developer-guidelines.html">Developer Guidelines</a></li><li><a href="accessibility-statement.html">Accessibility Statement</a></li><li><a href="cookie-settings.html">Cookie Settings</a></li></ul></div>
+      <div class="footer-col"><h3>Legal</h3><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li><li><a href="terms-and-conditions.html">Terms and Conditions</a></li><li><a href="advertising-policy.html">Advertising Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="copyright-policy.html">Copyright Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 PixelFair. All rights reserved.</span><span>Slogan: <em>Every Indie Game Deserves to Be Seen</em></span></div>
+  </div>
+</footer>
+<script id="pixelfair-shared-js">
+(function () {
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.getElementById('primary-nav');
+  if (toggle && links) {
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && links.classList.contains('open')) {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  }
+  var here = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (href === here) a.setAttribute('aria-current', 'page');
+  });
+})();
+</script>
+</body>
+</html>

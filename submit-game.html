@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Your Indie Game — Request a PixelFair Listing | Coming Soon Automation</title>
+<meta name="description" content="Submit your indie game to PixelFair. Complete the form and your email app opens with a prefilled request to services@digitalinfohub.net for review. Automated listings are Coming Soon.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Submit Your Indie Game — PixelFair">
+<meta property="og:description" content="Send us your game details for review via a prefilled email to services@digitalinfohub.net.">
+<meta property="og:url" content="https://pixelfair.example/submit-game.html">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://pixelfair.example/submit-game.html">
+<style id="pixelfair-shared-css">
+:root{--navy-900:#070b1e;--navy-800:#0b1026;--navy-700:#111735;--navy-600:#1a2147;--blue:#2f6bff;--cyan:#22d3ee;--purple:#a855f7;--text:#eaf0ff;--muted:#a6b3d9;--card-border:rgba(122,156,255,.22);--focus:#ffd166;--grad:linear-gradient(135deg,var(--blue) 0%,var(--cyan) 50%,var(--purple) 100%)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Poppins','Nunito','Segoe UI',system-ui,-apple-system,Arial,sans-serif;background:radial-gradient(1200px 600px at 80% -10%,rgba(47,107,255,.25),transparent 60%),radial-gradient(900px 500px at -10% 30%,rgba(168,85,247,.18),transparent 55%),var(--navy-900);color:var(--text);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{line-height:1.25;margin:0 0 .5em;font-weight:700}
+h1{font-size:clamp(1.9rem,4.5vw,3rem)}
+h2{font-size:clamp(1.4rem,3vw,2rem)}
+p{margin:0 0 1em}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--navy-700);color:#fff;padding:.7rem 1.2rem;z-index:200;border-radius:0 0 10px 0;font-weight:600}
+.skip-link:focus{left:0}
+.container{width:min(1180px,92%);margin-inline:auto}
+.section{padding:2.6rem 0}
+.badge-soon{display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#1a0d00;font-weight:800;font-size:.72rem;letter-spacing:1.2px;padding:.28rem .7rem;border-radius:999px;text-transform:uppercase}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(7,11,30,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(122,156,255,.18)}
+.nav-bar{display:flex;align-items:center;gap:1rem;padding:.7rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.25rem;color:var(--text)}
+.brand:hover{text-decoration:none}
+.brand .logo{width:38px;height:38px;border-radius:10px;background:var(--grad);display:grid;place-items:center;font-size:1.15rem;color:#04122b;font-weight:900;box-shadow:0 0 18px rgba(34,211,238,.45)}
+.brand-name{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;list-style:none;margin:0 0 0 auto;padding:0;gap:.2rem;align-items:center}
+.nav-links a{display:block;padding:.55rem .85rem;border-radius:10px;color:var(--text);font-weight:600;font-size:.95rem;transition:background .2s,color .2s}
+.nav-links a:hover{background:rgba(77,141,255,.16);text-decoration:none;color:#fff}
+.nav-links a[aria-current="page"]{background:rgba(34,211,238,.16);color:var(--cyan)}
+.nav-cta a{background:var(--grad);color:#04122b !important;font-weight:800;box-shadow:0 0 16px rgba(77,141,255,.5)}
+.nav-toggle{display:none;margin-left:auto;background:var(--navy-700);border:1px solid var(--card-border);color:var(--text);font-size:1.35rem;line-height:1;padding:.45rem .7rem;border-radius:10px;cursor:pointer}
+@media (max-width:920px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--navy-800);border-bottom:1px solid var(--card-border);padding:.8rem 4%;gap:.3rem}.nav-links.open{display:flex}.nav-links li{width:100%}.nav-links a{width:100%}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font:inherit;font-weight:700;padding:.78rem 1.5rem;border-radius:999px;border:none;cursor:pointer;transition:transform .18s,filter .18s;text-align:center}
+.btn-primary{background:var(--grad);color:#04122b;box-shadow:0 0 22px rgba(77,141,255,.55)}
+.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.1);text-decoration:none}
+.btn-secondary{background:transparent;color:var(--cyan);border:2px solid rgba(34,211,238,.6)}
+.btn-secondary:hover{background:rgba(34,211,238,.12);text-decoration:none}
+.breadcrumbs{font-size:.88rem;color:var(--muted);margin:1.4rem 0 .6rem}
+.breadcrumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0}
+.breadcrumbs li+li::before{content:"›";margin-right:.4rem;color:#7f8fc0}
+.breadcrumbs a{color:#9ecbff}
+.prose{max-width:80ch}
+.form-card{background:linear-gradient(165deg,var(--navy-700),var(--navy-800));border:1px solid var(--card-border);border-radius:20px;padding:2rem;max-width:760px;margin-inline:auto;box-shadow:0 14px 40px rgba(0,0,0,.4)}
+.form-grid{display:grid;gap:1.15rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.15rem}
+@media (max-width:640px){.form-row{grid-template-columns:1fr}}
+.field label{display:block;font-weight:600;margin-bottom:.35rem;font-size:.93rem}
+.field .req{color:#ffb3c1}
+.field input,.field select,.field textarea{width:100%;font:inherit;padding:.72rem .95rem;border-radius:12px;border:2px solid rgba(122,156,255,.35);background:var(--navy-900);color:var(--text)}
+.field textarea{min-height:120px;resize:vertical}
+.field .hint{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+.field-error{display:none;color:#ffb3c1;font-size:.85rem;font-weight:600;margin-top:.35rem}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#ff6b81}
+.field.invalid .field-error{display:block}
+.consent-field{display:flex;gap:.7rem;align-items:flex-start;background:rgba(47,107,255,.1);border:1px solid var(--card-border);border-radius:12px;padding:.9rem 1rem}
+.consent-field.invalid{border-color:#ff6b81}
+.consent-field input[type=checkbox]{width:20px;height:20px;margin-top:.25rem;accent-color:var(--cyan);flex-shrink:0}
+.consent-error{display:none;color:#ffb3c1;font-size:.85rem;font-weight:600;margin-top:.35rem}
+.consent-field.invalid + .consent-error,.consent-wrap.invalid .consent-error{display:block}
+.form-status{margin-top:1.1rem;padding:1rem 1.2rem;border-radius:12px;font-size:.92rem;display:none}
+.form-status.info{display:block;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.5);color:#d5f7ff}
+.form-status.error{display:block;background:rgba(255,107,129,.12);border:1px solid rgba(255,107,129,.55);color:#ffd6dd}
+.mailbox-note{background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.45);border-radius:14px;padding:1rem 1.2rem;font-size:.92rem;color:#ecd9ff;max-width:760px;margin:1.4rem auto 0}
+.contact-mail{font-weight:700;color:var(--cyan) !important}
+.email-hero{text-align:center;margin:1rem 0 1.6rem}
+.email-hero .mail-big{font-size:1.25rem}
+.status-list{list-style:none;padding:0;margin:0;display:grid;gap:.6rem;max-width:760px;margin-inline:auto}
+.status-list li{background:rgba(47,107,255,.1);border:1px solid var(--card-border);border-radius:12px;padding:.7rem 1rem;display:flex;gap:.6rem;align-items:center;flex-wrap:wrap}
+.site-footer{margin-top:3rem;background:#05081a;border-top:1px solid rgba(122,156,255,.2);padding:3rem 0 1.6rem;font-size:.92rem}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:2rem}
+.footer-col h3{font-size:.95rem;text-transform:uppercase;letter-spacing:1.4px;color:#cfe4ff;margin-bottom:.8rem}
+.footer-col ul{list-style:none;margin:0;padding:0}
+.footer-col li{margin-bottom:.45rem}
+.footer-col a{color:var(--muted)}
+.footer-col a:hover{color:var(--cyan)}
+.footer-bottom{margin-top:2.2rem;padding-top:1.2rem;border-top:1px solid rgba(122,156,255,.15);color:#8fa0cf;display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between}
+.visually-hidden{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}.btn:hover{transform:none}}
+</style>
+<script defer>
+/* Submit-a-Game form: validation + mailto workflow to services@digitalinfohub.net.
+   No data is transmitted or stored by this website. */
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('submit-form');
+  if (!form) return;
+  var RECIPIENT = 'services@digitalinfohub.net';
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  var statusBox = document.getElementById('form-status');
+
+  function setFieldError(id, msg) {
+    var el = document.getElementById(id);
+    var wrap = el.closest('.field');
+    var errEl = wrap.querySelector('.field-error');
+    if (msg) {
+      wrap.classList.add('invalid');
+      el.setAttribute('aria-invalid', 'true');
+      if (errEl) errEl.textContent = msg;
+    } else {
+      wrap.classList.remove('invalid');
+      el.removeAttribute('aria-invalid');
+    }
+    return !msg;
+  }
+
+  function validate() {
+    var ok = true, firstBad = null;
+    function req(id, label) {
+      var v = document.getElementById(id).value.trim();
+      var good = setFieldError(id, v ? '' : 'Please enter your ' + label + '.');
+      if (!good && !firstBad) firstBad = document.getElementById(id);
+      ok = ok && good;
+    }
+    req('f-devname', 'developer name');
+    req('f-email', 'email address');
+    req('f-gametitle', 'game title');
+    req('f-gamedesc', 'game description');
+    req('f-genre', 'genre selection');
+
+    var email = document.getElementById('f-email').value.trim();
+    if (email && !EMAIL_RE.test(email)) {
+      setFieldError('f-email', 'That does not look like a valid email address (expected name@example.com).');
+      ok = false; if (!firstBad) firstBad = document.getElementById('f-email');
+    }
+    var consent = document.getElementById('f-consent');
+    var consentWrap = consent.closest('.consent-wrap');
+    if (!consent.checked) {
+      consentWrap.classList.add('invalid');
+      consent.setAttribute('aria-invalid', 'true');
+      ok = false; if (!firstBad) firstBad = consent;
+    } else { consentWrap.classList.remove('invalid'); consent.removeAttribute('aria-invalid'); }
+
+    return { ok: ok, firstBad: firstBad };
+  }
+
+  function val(id){ return document.getElementById(id).value.trim(); }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    statusBox.className = 'form-status'; statusBox.textContent = '';
+
+    var res = validate();
+    if (!res.ok) {
+      statusBox.className = 'form-status error';
+      statusBox.innerHTML = '<strong>Please fix the highlighted fields above.</strong> Nothing has been emailed yet.';
+      if (res.firstBad) res.firstBad.focus();
+      return;
+    }
+
+    var subject = 'PixelFair Game Submission Request: ' + val('f-gametitle');
+    var body =
+      'PixelFair Game Submission Request\n' +
+      '==================================\n\n' +
+      'Developer name: ' + val('f-devname') + '\n' +
+      'Email address: ' + val('f-email') + '\n' +
+      'Game title: ' + val('f-gametitle') + '\n' +
+      'Game genre: ' + val('f-genre') + '\n' +
+      'Game description:\n' + val('f-gamedesc') + '\n\n' +
+      'Game website / playable URL: ' + (val('f-url') || 'Not provided') + '\n' +
+      'Supported platforms: ' + (val('f-platforms') || 'Not provided') + '\n' +
+      'Artwork / screenshot URL: ' + (val('f-artwork') || 'Not provided') + '\n' +
+      'Developer website / social link: ' + (val('f-devsite') || 'Not provided') + '\n\n' +
+      'Additional message:\n' + (val('f-message') || '(none)') + '\n\n' +
+      'Consent: I confirm I have permission to submit the supplied game information and artwork.\n\n' +
+      '-- Sent from the PixelFair "Submit a Game" page (' + location.href + ') --';
+
+    var href = 'mailto:' + RECIPIENT + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+    /* Open the visitor's own email application. We cannot detect whether it
+       actually sends — so we never claim delivery. */
+    window.location.href = href;
+
+    statusBox.className = 'form-status info';
+    statusBox.innerHTML =
+      '<strong>Your email application should now be opening with a prefilled message addressed to ' +
+      '<a class="contact-mail" href="mailto:services@digitalinfohub.net">services@digitalinfohub.net</a>.</strong><br>' +
+      '⚠️ <em>The request has NOT been sent until you press Send inside your email application.</em> ' +
+      'If nothing opened (no email app configured on this device), use one of the fallback options below.';
+  });
+
+  /* Live-clear errors as the user types */
+  ['f-devname','f-email','f-gametitle','f-gamedesc','f-genre'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', function(){ setFieldError(id,''); });
+  });
+  document.getElementById('f-consent').addEventListener('change', function(){
+    this.closest('.consent-wrap').classList.remove('invalid');
+  });
+});
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html" aria-label="PixelFair home"><span class="logo" aria-hidden="true">▲</span><span class="brand-name">PixelFair</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">☰</button>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="nav-cta"><a href="submit-game.html" aria-current="page">Submit a Game</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container prose">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol><li><a href="index.html">Home</a></li><li aria-current="page">Submit a Game</li></ol>
+  </nav>
+
+  <h1>Submit Your Indie Game</h1>
+  <p style="font-size:1.08rem">Want your indie game featured on PixelFair? Send us your game details and our team can review your request.</p>
+
+  <div class="email-hero">
+    <p>Requests go to: <a class="contact-mail mail-big" href="mailto:services@digitalinfohub.net?subject=PixelFair%20Game%20Submission%20Request">services@digitalinfohub.net</a></p>
+    <p style="font-size:.85rem;color:var(--muted)">Alternative contact: <a href="mailto:artifyspace@icloud.com?subject=PixelFair%20Game%20Submission%20Request">artifyspace@icloud.com</a> (secondary — the primary recipient remains services@digitalinfohub.net)</p>
+  </div>
+
+  <div class="mailbox-note" role="note">
+    <strong>How this form works:</strong> PixelFair is a static website with no backend. When you complete the form and press <em>Request Game Submission</em>, your browser validates the fields and then opens <u>your own email application</u> with everything prefilled. Nothing is uploaded, transmitted in the background, or stored by this website, and the request is only sent once <strong>you</strong> press Send in your mail app.
+  </div>
+
+  <section class="section" aria-labelledby="form-title">
+    <h2 id="form-title" class="visually-hidden">Game submission request form</h2>
+    <form class="form-card" id="submit-form" novalidate>
+      <div class="form-grid">
+        <div class="form-row">
+          <div class="field">
+            <label for="f-devname">Developer name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="f-devname" name="devname" autocomplete="organization-name" required aria-required="true" aria-describedby="e-devname">
+            <p class="field-error" id="e-devname" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-email">Email address <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="f-email" name="email" autocomplete="email" required aria-required="true" aria-describedby="e-email">
+            <p class="field-error" id="e-email" role="alert"></p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-gametitle">Game title <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="f-gametitle" name="gametitle" required aria-required="true" aria-describedby="e-gametitle">
+            <p class="field-error" id="e-gametitle" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-genre">Game genre <span class="req" aria-hidden="true">*</span></label>
+            <select id="f-genre" name="genre" required aria-required="true" aria-describedby="e-genre">
+              <option value="">Choose a genre…</option>
+              <option>Action</option><option>Adventure</option><option>Puzzle</option><option>RPG</option>
+              <option>Platformer</option><option>Strategy</option><option>Horror</option><option>Racing</option>
+              <option>Simulation</option><option>Casual</option><option>Arcade</option><option>Multiplayer</option>
+              <option>Other</option>
+            </select>
+            <p class="field-error" id="e-genre" role="alert"></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-gamedesc">Game description <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="f-gamedesc" name="gamedesc" required aria-required="true" aria-describedby="e-gamedesc hint-gamedesc" placeholder="What is the game about? Core loop, style, what makes it special…"></textarea>
+          <p class="hint" id="hint-gamedesc">A few sentences is plenty — you can always email more detail later.</p>
+          <p class="field-error" id="e-gamedesc" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="f-url">Game website or playable URL <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+          <input type="url" id="f-url" name="url" inputmode="url" placeholder="https://…">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-platforms">Supported platforms <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+            <input type="text" id="f-platforms" name="platforms" placeholder="e.g. Windows, macOS, Linux, Switch, Web">
+          </div>
+          <div class="field">
+            <label for="f-artwork">Artwork or screenshot URL <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+            <input type="url" id="f-artwork" name="artwork" inputmode="url" placeholder="https://…">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-devsite">Developer website or social link <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+          <input type="url" id="f-devsite" name="devsite" inputmode="url" placeholder="https://…">
+        </div>
+        <div class="field">
+          <label for="f-message">Additional message <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+          <textarea id="f-message" name="message" placeholder="Anything else we should know — press kit links, launch window, etc."></textarea>
+        </div>
+
+        <div class="consent-wrap">
+          <div class="consent-field field">
+            <input type="checkbox" id="f-consent" name="consent" required aria-required="true" aria-describedby="e-consent">
+            <label for="f-consent" style="margin:0;font-weight:600">I confirm that I have permission to submit the supplied game information and artwork, and that it does not infringe anyone else’s rights. <span class="req" aria-hidden="true">*</span></label>
+          </div>
+          <p class="consent-error" id="e-consent" role="alert">You must tick the consent checkbox before requesting a submission.</p>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary" style="width:100%;font-size:1.05rem">📨 Request Game Submission</button>
+        </div>
+        <div class="form-status" id="form-status" role="alert" aria-live="assertive"></div>
+      </div>
+    </form>
+
+    <div class="mailbox-note" role="note">
+      <strong>No email app opened?</strong> That means your device has no default mail client configured — the form itself cannot send anything. Fallback options:<br>
+      • Use this direct link: <a class="contact-mail" href="mailto:services@digitalinfohub.net?subject=PixelFair%20Game%20Submission%20Request">mailto:services@digitalinfohub.net</a><br>
+      • Or copy your details and email <a class="contact-mail" href="mailto:services@digitalinfohub.net">services@digitalinfohub.net</a> manually from any webmail service.<br>
+      • Secondary contact: <a href="mailto:artifyspace@icloud.com">artifyspace@icloud.com</a>.
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="status-title">
+    <h2 id="status-title">Submission Status</h2>
+    <ul class="status-list">
+      <li>✅ Email-based listing requests — <strong>available now</strong> (this form).</li>
+      <li><span class="badge-soon">Coming Soon</span> Automated web submissions (no email app needed).</li>
+      <li><span class="badge-soon">Coming Soon</span> Public game listings beyond current examples.</li>
+      <li><span class="badge-soon">Coming Soon</span> Review automation &amp; submission status dashboard.</li>
+    </ul>
+    <p><strong>Please note:</strong> an emailed request is a <em>request for review</em> — it does not automatically publish a game listing. Our team reads every request, but publication depends on manual review.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h3>PixelFair</h3><p style="color:var(--muted)">Every Indie Game Deserves to Be Seen. A discovery platform for independent games &mdash; listings and features marked <strong>Coming Soon</strong>.</p><p>Email: <a class="contact-mail" href="mailto:services@digitalinfohub.net">services@digitalinfohub.net</a></p></div>
+      <div class="footer-col"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="games.html">Games Directory</a></li><li><a href="blog.html">Blog</a></li><li><a href="about.html">About</a></li><li><a href="submit-game.html">Submit a Game</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h3>Information</h3><ul><li><a href="faq.html">FAQ</a></li><li><a href="community-guidelines.html">Community Guidelines</a></li><li><a href="developer-guidelines.html">Developer Guidelines</a></li><li><a href="accessibility-statement.html">Accessibility Statement</a></li><li><a href="cookie-settings.html">Cookie Settings</a></li></ul></div>
+      <div class="footer-col"><h3>Legal</h3><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li><li><a href="terms-and-conditions.html">Terms and Conditions</a></li><li><a href="advertising-policy.html">Advertising Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="copyright-policy.html">Copyright Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 PixelFair. All rights reserved.</span><span>Slogan: <em>Every Indie Game Deserves to Be Seen</em></span></div>
+  </div>
+</footer>
+<script id="pixelfair-shared-js">
+(function () {
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.getElementById('primary-nav');
+  if (toggle && links) {
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && links.classList.contains('open')) {
+        links.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+  }
+  var here = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (href === here) a.setAttribute('aria-current', 'page');
+  });
+})();
+</script>
+</body>
+</html>
